@@ -1,0 +1,30 @@
+{
+    "name": "oleaass/laravel-categories",
+    "description": "Add cateogires to any Laravel applications",
+    "type": "laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ole Aass",
+            "email": "aass.ole@gmail.com"
+        }
+    ],
+    "require": {
+        "oleaass/laravel-sluggable": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OleAass\\Categories\\": "src/",
+						"OleAass\\Categories\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": "OleAass\\Categories\\CategoriesServiceProvider"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^6.20"
+    }
+}
